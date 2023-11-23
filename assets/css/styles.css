@@ -1,1 +1,50 @@
-/* Write cool CSS below */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background: rgb(2,0,36);
+    background: -moz-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+    font-family: 'Roboto';
+}
+
+#form-container {
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 300px;
+    border: 10px solid lightblue;
+    border-radius: 10px 10px 10px 10px;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+}
+
+form input {
+    margin-bottom: 0.5rem;
+    border: 1px solid #000;
+}
+
+.error-container {
+    display: block;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 300px;
+    border: 10px solid transparent;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.error {
+    border: 2px solid red;
+}

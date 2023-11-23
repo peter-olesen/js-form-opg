@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Site title goes here</title>
-    <meta name="description" content="Site description goes here">
+    <title>JS Form Validering Opgave</title>
+    <!-- <meta name="description" content="Site description goes here"> -->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/scripts.js" defer></script>
 </head>
 <body>
-    <p>This is just a simple "boilerplate" in HTML created at skewl.</p>
-    <p>Use at your own risk!</p>
+    <div id="form-container">
+        <form>
+            <label for="firstName">Fornavn</label> <input id="firstName" type="name" autocomplete="given-name">
+            <label for="lastName">Efternavn</label> <input id="lastName" type="name" autocomplete="family-name">
+            <label for="address">Adresse</label> <input id="address" type="address" autocomplete="street-address">
+            <label for="zipCode">Postnummer</label> <input id="zipCode" type="text" autocomplete="postal-code">
+            <label for="email">Email</label> <input id="email" type="email" autocomplete="email">
+            <button id="submitButton">Opret</button>
+        </form>
+    </div>
+    <div id="error-container">
+
+    </div>
 </body>
 </html>
